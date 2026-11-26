@@ -119,7 +119,7 @@ html,body{overflow-x:hidden}
     var L=WERK.length, zicht=slots.map(function(x){return x.w;}), tries=0;
     while(zicht.indexOf(next%L)>-1 && tries<L){ next++; tries++; }
     var i=Math.floor(Math.random()*12); slots[i]={w:next%L,n:slots[i].n+1}; vul(tiles[i],WERK[next%L],DIRS[slots[i].n%4]); next++;
-  },2200);
+  },1200);
 })();
 </script>
 </body>
