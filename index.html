@@ -36,7 +36,8 @@ a{color:#1A1714}a:hover{color:#6B5A3E}
 .dienst{background:#DDE8EC;transition:background .25s}
 </style>
 <style>.tegel{cursor:default}
-html,body{overflow-x:hidden}
+body{overflow-x:clip}
+@supports not (overflow-x:clip){html{overflow-x:hidden}}
 @media (max-width: 900px){
   body *{max-width:100% !important}
   [style*="width: 1240px"],[style*="width: 1144px"]{width:auto !important}
